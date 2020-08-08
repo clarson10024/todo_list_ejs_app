@@ -13,6 +13,7 @@ app.use(express.static("public"));
 
 mongoose.connect("mongodb+srv://clarson80210:E6EbXaZ4m3UhrXZ@clarson10024.ycj6m.mongodb.net/todolistDB",
   { useNewUrlParser: true,
+    useFindAndModify: false,
     useUnifiedTopology: true});
 
 const itemsSchema = {
